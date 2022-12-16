@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 // require("dotenv").config({ path: "db/config.env" });
+console.log(process.env.DB);
 const fileRoute = require("./routes/file");
 require("./db/db");
 
