@@ -13,6 +13,6 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "build", "index.html"));
 });
 
-app.listen(3030, () => {
+app.listen(4000, () => {
   console.log("server started on port 3030");
 });
