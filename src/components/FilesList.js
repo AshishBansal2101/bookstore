@@ -10,7 +10,10 @@ const FilesList = () => {
   useEffect(() => {
     const getFilesList = async () => {
       try {
-        const { data } = await axios.get(`${API_URL}/getAllFiles`);
+        const { data } = await axios.get(
+          `https://bookstore-efj1.onrender.com/getAllFiles`
+        );
+        // console.log(data);
         setErrorMsg("");
         setFilesList(data);
       } catch (error) {
